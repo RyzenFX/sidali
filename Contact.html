@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<link href="style3.css" rel="stylesheet" type="text/css" />
+
+<title>Contact ?</title>
+
+
+</HEAD>
+<body>
+<header id='header'>
+<div class="one">
+<a href="index.html"><img src="pic.jpg" alt="Kharef_Sidali" ></div></a>
+<div class"two">
+<div>Kharef Sidali </div> <span>computer science student <br> Web developer
+</span></div>
+<div class="menu">
+<ul id="buttons">
+      <li><a href="index.html">Home </a></li>
+      <li><a href="personnelinformation.html">Info</a></li>
+       <li><a href="Achievements.html">Achievements</a></li>
+       <li><a href="Contact.html"class="active">Contact</a></li>
+</ul>
+</div>
+</header>
+<bbody class="bbday">
+<h4>Enter Your message:<h4><br>
+<form method="POST" action="Contact.php">
+<input type='text' class="email" name="name" placeholder="First & Last Name" size="30" required >
+<input type="email" class="email" name="email" placeholder="example@gmail.com" pattern=".+@gmail.com" size="30" required></br>
+
+<textarea class="msg" wrap="virtual" name="message"
+rows=10 cols=100
+maxlength=30%></textarea><br>
+<button type="submit" class="btn success">send</button>
+<input type="Reset" class="btn danger" value="Clear">
+</form>
+
+
+<div class="social">
+<a href="https://web.facebook.com/thomas.shelby.73157"><img src="icons/facebookicon.webp" class="icon"></img><a href="https://web.facebook.com/thomas.shelby.73157">Facebook</a></a> <br>
+<a href="https://www.instagram.com/sidali_kharef/"><img src="icons/instaicon.png" class="icon"></img><a href="https://www.instagram.com/sidali_kharef/">Instagram</a> </a>
+</div>
+
+</bbdoy>
+
+<script>
+function Send(){
+        alert("Form1ccessfully!");
+
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(message.length <= 140){
+    text = "Please Enter More Than 140 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+    alert(email);
+      alert(message);
+  alert("Form Submitted Successfully!");
+  return true;
+}
+</script>
+
+</BODY>
+</HTML>

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<link href="style4.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>Achievements</title>
+
+
+</HEAD>
+<body>
+<header id='header'>
+<div class="one">
+<a href="index.html"><img src="pic.jpg" alt="Kharef_Sidali" ></div></a>
+<div class"two">
+<div>Kharef Sidali </div> <span>computer science student <br> Web developer
+</span></div>
+<div class="menu">
+<ul id="buttons">
+      <li><a href="index.html">Home </a></li>
+      <li><a href="personnelinformation.html">Info</a></li>
+       <li><a href="Achievements.html" class="activee" >Achievements</a></li>
+       <li><a href="Contact.html" >Contact</a></li>
+</ul>
+</div>
+</header>
+<bbody class=" bbody">
+<div class="project" name="project 1">  
+<div class="proj">
+<h2>decision support system <span>"ELECTRO 1"</span></h2>
+<p><span>School Project :</span> we've create a simple JAVA application that respects all the "ELECTRO 1" formulas . <p>
+<p><span>CASE STUDY:</span> choice of accommodation<p>
+<ul class="a">
+  <li> choice of an apartment offered for sale by a property developer </li>
+  <li>Pre-selection of 5 apartments according to the following 4 attributes:</li>
+</ul>
+<ul class="b">
+  <li>price in Million cts</li>
+  <li>Journey time from apartment to city center</li>
+  <li>Area</li>
+  <li>Floor</li>
+  </ul>
+  <p><span>ROMARK</span> We did this apps as groupe of 3 not solo ! <span>see the report for more information ...</span></p>
+  <button class="btn" onclick=" window.open('pro1/sad.pdf','_blank')"><i class="fa fa-folder"></i> See the Report (FR)</button>
+
+</div>
+<div class="pics"> 
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+      <img src="pro1/1.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+      <img src="pro1/2.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+      <img src="pro1/4.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+      <img src="pro1/5.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+      <img src="pro1/6.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+      <img src="pro1/7.JPG" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+      <img src="pro1/3.JPG" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+      <img src="pro1/graph.JPG" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pro1/1.JPG" style="width:80% " onclick="currentSlide(1)" alt="Accueil">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pro1/2.JPG" style="width:80%" onclick="currentSlide(2)" alt="List des appartemnt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pro1/4.JPG" style="width:80%" onclick="currentSlide(3)" alt="List des appartemnt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pro1/5.JPG" style="width:80%" onclick="currentSlide(4)" alt="Normalisation">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pro1/6.JPG" style="width:80%" onclick="currentSlide(5)" alt="Concordance ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pro1/7.JPG" style="width:80%" onclick="currentSlide(6)" alt="Discordance ">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="pro1/3.JPG" style="width:80%" onclick="currentSlide(7)" alt="Sur-classment">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="pro1/graph.JPG" style="width:80%" onclick="currentSlide(8)" alt="graph">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+</bbody>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</BODY>
+</HTML>

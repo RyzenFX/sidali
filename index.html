@@ -1,0 +1,100 @@
+<DOCTYPE HTML>
+<HTML>
+<HEAD>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<title>Home Page</title>
+
+
+</HEAD>
+
+
+<BODY>
+<header id='header'>
+<i class="fa fa-header" aria-hidden="true">
+<img src="pic.jpg" alt="Kharef_Sidali" >
+
+<div>Kharef Sidali </div> <span>computer science student <br> Web developer
+</span>
+</i>
+</header>
+<Bbody id='bbody'>
+<h2> Curriculum vitae </h2>
+<div id='itsme'>
+<h4> a little bit about me ? <h4>
+<p >Hi, my name is Sidali Kharef. I'm a 23 years old and i'm from Algeria. 
+I study Information System and Software Engineering at the University of 20 August 1955 in my hometown Skikda.
+ I'm an enthusiast when it comes to data processing, website developping and designing. and you can add coding to  the list.
+  I developped this website to showcase my CV and my studies projects and works.
+   Feel free to contact me if you want more insight about my work and my experience in the field.
+</p>
+</div>
+<div class="menu">
+<ul id="buttons">
+ <li><a href="personnelInformation.html">info </a></li>
+       <li><a href="Achievements.html">Achievements</a></li>
+       <li><a href="Contact.html">Contact</a></li>
+</ul>
+</div>
+</br>
+<a href="Achievements.html">
+<div class="slide" >
+  <img class="mySlides" src="p.jpg" style="width:100%">
+  <img class="mySlides" src="comm.jpg" style="width:100%">
+
+</div>
+</a>
+
+</Bbody>
+<footer class="footer">
+    <div class="fott">
+      <div class="span1">
+        <h4>Navigation</h4>
+        <ul class="nav">
+       <li><a href="personnelInformation.html">Info</a></li>
+       <li><a href="Achievements.html">Achievements</a></li>
+       <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="span2">
+        <ul class="social">
+         <h4>Socials</h4>
+          <li><a href="https://web.facebook.com/thomas.shelby.73157" class="footer_facebook">Facebook</a></li>
+          <li><a href="https://www.instagram.com/sidali_kharef/" class="footer_twitter">Instagram</a></li>
+        </ul>
+      </div>
+       <div class="span3">
+        <h4>Website created and designed using :  </h4>
+        <ul class="used">
+          <li><a href="https://en.wikipedia.org/wiki/HTML" class="footer_facebook">HTML 5</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" class="footer_twitter">CSS 3</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/JavaScript" class="footer_googleplus">JAVASCRIPT</a></li>
+           <li><a href="https://fr.wikipedia.org/wiki/PHP" class="footer_googleplus">PHP</a></li>
+        </ul>
+      </div>
+    </div>
+   
+</footer>
+ <div class="copy">
+    <h7>©Copyright @Kharef Sidali</h7>
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</BODY>
+</HTML>
